@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;"
+    />
+    <title>Olunuga Tobiloba — Portfolio</title>
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inter Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Centered Navigation -->
+    <header class="site-header">
+      <!-- Left: Mobile Menu Trigger -->
+      <button
+        id="menu-btn"
+        class="menu-btn"
+        aria-label="Open Navigation"
+        aria-expanded="false"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+          fill="currentColor"
+        >
+          <path
+            d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
+          ></path>
+        </svg>
+      </button>
+
+      <div id="backdrop" class="backdrop"></div>
+
+      <!-- Mobile Nav Drawer -->
+      <aside id="drawer" class="nav-drawer" aria-hidden="true">
+        <div class="drawer-header">
+          <h2>MENU</h2>
+          <button
+            id="close-btn"
+            class="close-btn"
+            aria-label="Close Navigation"
+          >
+            &times;
+          </button>
+        </div>
+        <ul class="drawer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+
+      <!-- Center: Desktop Nav Links -->
+      <nav class="nav-center">
+        <ul class="header-links">
+          <li><a href="#" class="active-link">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Status Badge (Balances Header Layout) -->
+      <div class="header-right">
+        <span class="status-badge">
+          <span class="status-dot"></span> Available for Work
+        </span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1 class="hero-heading">
+        Hi, I'm Olunuga Tobiloba — Crafting Clean & Modern Web Experiences
+      </h1>
+      <p class="hero-subtext">
+        I focus on creating functional and useful websites and apps to make end
+        users' lives easier.
+      </p>
+      <a href="#projects" class="cta-btn" aria-label="View Projects">
+        Explore Projects
+      </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="project-section">
+      <!-- Section Signpost -->
+      <div class="section-header">
+        <span class="section-tag">01 / PORTFOLIO</span>
+        <h2 class="section-main-title">Featured Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project Card 1: Java Project 1 -->
+        <div class="project-card">
+          <img src="assets/watch-site-home.png" class="product-image" alt="Java Project 1 Artwork" />
+          <div class="overlay">
+            <h3 class="overlay-heading">Java Project 1</h3>
+            <p class="overlay-subtext">
+              Interactive logic and dynamic browser features
+            </p>
+            <a href="project.html?id=java-project-1" class="overlay-cta">
+              <span class="cta-icon">&#10142;</span>
+              <span class="cta-text">Dive In</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Louis Vuitton Clone -->
+        <div class="project-card">
+          <img src="assets/louis-vutton-home.png" class="product-image" alt="Louis Vuitton Clone Artwork" />
+          <div class="overlay">
+            <h3 class="overlay-heading">Louis Vuitton Clone</h3>
+            <p class="overlay-subtext">
+              Luxury fashion layout and editorial design
+            </p>
+            <a href="project.html?id=louis-vuitton-clone" class="overlay-cta">
+              <span class="cta-icon">&#10142;</span>
+              <span class="cta-text">Dive In</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: BMW Replica -->
+        <div class="project-card">
+          <img src="assets/bmw-home.png" class="product-image" alt="BMW Replica Artwork" />
+          <div class="overlay">
+            <h3 class="overlay-heading">BMW Replica</h3>
+            <p class="overlay-subtext">
+              Sleek vehicular branding and presentation
+            </p>
+            <a href="project.html?id=bmw_rep" class="overlay-cta">
+              <span class="cta-icon">&#10142;</span>
+              <span class="cta-text">Dive In</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 4: Spotify Premium Page Clone -->
+        <div class="project-card">
+          <img
+            src="assets/spotify-home.png"
+            class="product-image"
+            alt="Spotify Premium Clone Artwork"
+          />
+          <div class="overlay">
+            <h3 class="overlay-heading">Spotify Premium</h3>
+            <p class="overlay-subtext">
+              Modern subscription landing page experience
+            </p>
+            <a
+              href="project.html?id=spotify-premium-page-clone"
+              class="overlay-cta"
+            >
+              <span class="cta-icon">&#10142;</span>
+              <span class="cta-text">Dive In</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 5: GitHub Pricing Clone -->
+        <div class="project-card">
+          <img
+            src="assets/github-home.png"
+            class="product-image"
+            alt="GitHub Pricing Clone Artwork"
+          />
+          <div class="overlay">
+            <h3 class="overlay-heading">GitHub Pricing</h3>
+            <p class="overlay-subtext">
+              Clean tier comparison and developer layout
+            </p>
+            <a href="project.html?id=github-pricing-clone" class="overlay-cta">
+              <span class="cta-icon">&#10142;</span>
+              <span class="cta-text">Dive In</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="split-section">
+      <!-- Section Signpost -->
+      <div class="section-header">
+        <span class="section-tag">02 / EXPERTISE</span>
+        <h2 class="section-main-title">Background & Skills</h2>
+      </div>
+
+      <div class="split-container">
+        <div class="split-content">
+          <h3 class="split-heading">About Me</h3>
+          <p class="about-subtext">
+            I'm an aspiring web developer with UI & UX knowledge, dedicated to
+            crafting intuitive layouts for websites and mobile apps to achieve
+            ultimate responsiveness. I have many exciting projects I'll be
+            sharing over time to make daily life simpler and more convenient for
+            everyone.
+          </p>
+        </div>
+        <div class="split-content">
+          <h3 class="split-heading">Skills</h3>
+          <ul class="skills-content">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">UI & UX DESIGN</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <span class="section-tag">03 / CONTACT</span>
+        <h2 class="section-main-title">Get in Touch</h2>
+      </div>
+
+      <div class="contact-container">
+        <!-- Left Side: Info / Greeting -->
+        <div class="contact-info-box">
+          <h3 class="contact-heading">I'd like to hear from you!</h3>
+          <p class="contact-subtext">
+            If you have any enquiries or just want to say hi, please use the
+            contact form or drop a message. I'll get back to you soon.
+          </p>
+        </div>
+
+        <!-- Right Side: Styled Form Card -->
+        <div class="contact-form-box">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="John"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <div class="button-container">
+              <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="container-content">
+          <h2 class="footer-heading">OLUNUGA TOBILOBA</h2>
+          <p class="footer-subtext">Crafting Modern Web Experiences</p>
+          <div class="btm-container-content">
+            <p>Building interfaces that matter.</p>
+          </div>
+        </div>
+
+        <div class="container-content">
+          <h2 class="footer-heading">Navigation</h2>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="container-content">
+          <h2 class="footer-heading">Socials</h2>
+          <div class="social-links">
+            <a
+              href="https://github.com/Tobi2007"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="links-svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              Github</a
+            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="links-svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+              YouTube</a
+            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="links-svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+              Instagram
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="links-svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                /></svg
+              >Twitter</a
+            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="links-svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.242V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002-.001a2.895 2.895 0 0 1 3.144-4.53v-3.48a6.342 6.342 0 0 0-5.645 5.843v.175a6.34 6.34 0 0 0 3.824 5.818 6.342 6.342 0 0 0 7.394-1.764 6.337 6.337 0 0 0 1.474-4.21V8.674a8.197 8.197 0 0 0 4.77 1.536V6.759a4.793 4.793 0 0 1-1.051-.073z"
+                />
+              </svg>
+              TikTok</a
+            >
+          </div>
+        </div>
+
+        <div class="container-content">
+          <h2 class="footer-heading">WORK TOGETHER</h2>
+          <div class="cta-content">
+            <span>Start a conversation. Let's discuss a project.</span>
+            <div class="cta-group">
+              <a href="#contact" class="footer-cta-btn">Get in touch &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btm-footer">
+        <div class="btm-footer-grid">
+          <div class="btm-footer-container">
+            <span>&copy; 2026 All rights reserved</span>
+          </div>
+          <div class="btm-footer-container">
+            <span>Design & Code by Me</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Scroll-to-Top Button -->
+    <button
+      id="scroll-top-btn"
+      class="scroll-top-btn"
+      aria-label="Scroll to top"
+    >
+      &uarr;
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
